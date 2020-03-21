@@ -4,3 +4,6 @@
 #Date:- 22 March 2020
 
 echo "-------SNAKE AND LADDER GAME-------"
+
+START=0
+echo "Starting position is $START"
