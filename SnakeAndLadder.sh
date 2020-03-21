@@ -16,9 +16,11 @@ playerPos=$START
 echo "Starting position is $START"
 
 function playGame() {
+	totalDiceRolls=0
 	while [ $playerPos -lt $WIN ]
 	do
 		diceValue=$((RANDOM % 6 + 1))
+		((totalDiceRolls++))
 		echo -e "\nDice value is $diceValue"
 		option=$((RANDOM % 3))
 		case $option in
@@ -41,6 +43,7 @@ function playGame() {
 		esac
 		echo "Player position is $playerPos"
 	done
+	echo "The dice was rolled $totalDiceRolls times to reach winning position"
 }
 
 playGame
