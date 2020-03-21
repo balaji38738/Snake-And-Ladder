@@ -7,3 +7,5 @@ echo "-------SNAKE AND LADDER GAME-------"
 
 START=0
 echo "Starting position is $START"
+diceValue=$((RANDOM % 6 + 1))
+echo "Dice value is $diceValue"
