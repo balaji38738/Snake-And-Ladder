@@ -54,11 +54,11 @@ function playGame() {
 			$SNAKE)
 				echo "Snake"
 				if [ $currentPlayer -eq 1 ]
-            then
-              player1Pos="$( playerMove $SNAKE $player1Pos )"
-            else
-              player2Pos="$( playerMove $SNAKE $player2Pos )"
-            fi;;
+            	then
+              		player1Pos="$( playerMove $SNAKE $player1Pos )"
+            	else
+              		player2Pos="$( playerMove $SNAKE $player2Pos )"
+            	fi;;
 			$LADDER)
 				echo "Ladder"
 				if [ $currentPlayer -eq 1 ]
