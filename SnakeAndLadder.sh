@@ -37,7 +37,7 @@ function playGame() {
 			$LADDER)
 				echo "Ladder"
 				if [ $((playerPos + diceValue)) -le 100 ]
-            then
+            	then
 					((playerPos+=$diceValue))
 				fi;;
 		esac
