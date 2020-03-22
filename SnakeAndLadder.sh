@@ -54,11 +54,11 @@ function playGame() {
 			$SNAKE)
 				echo "Snake"
 				if [ $currentPlayer -eq 1 ]
-            then
-              player1Pos="$( playerMove $SNAKE $player1Pos )"
-            else
-              player2Pos="$( playerMove $SNAKE $player2Pos )"
-            fi;;
+            	then
+              		player1Pos="$( playerMove $SNAKE $player1Pos )"
+            	else
+              		player2Pos="$( playerMove $SNAKE $player2Pos )"
+            	fi;;
 			$LADDER)
 				echo "Ladder"
 				if [ $currentPlayer -eq 1 ]
@@ -68,7 +68,7 @@ function playGame() {
 					player2Pos="$( playerMove $LADDER $player1Pos )"
 				fi;;
 		esac
-			echo "Player 1: $player1Pos	Player 2: $player2Pos"
+		echo "Player 1: $player1Pos	Player 2: $player2Pos"
 		currentPlayer=$((3 - currentPlayer))
 	done
 	echo -e "\nThe dice was rolled $totalDiceRolls times to reach winning position"
