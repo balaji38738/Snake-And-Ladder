@@ -65,7 +65,7 @@ function playGame() {
 				then
 					player1Pos="$( playerMove $LADDER $player1Pos )"
 				else
-					player2Pos="$( playerMove $LADDER $player1Pos )"
+					player2Pos="$( playerMove $LADDER $player2Pos )"
 				fi;;
 		esac
 		echo "Player 1: $player1Pos	Player 2: $player2Pos"
